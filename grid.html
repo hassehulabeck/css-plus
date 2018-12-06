@@ -1,0 +1,61 @@
+<html>
+<head>
+  <script></script>
+  <style>
+    section {
+      border: thin solid black;
+      display: inline-grid;
+      grid-template-columns: repeat(5, 100px);
+      grid-template-rows: repeat(5, 100px);
+      grid-gap: 5px;
+    }
+    .kula {
+      background-color: red;
+      border-radius: 25%;
+      padding: 20% 33%;
+      color: white;
+      font-weight: 700;
+      font-size: 3em;
+      border: none;
+    }
+    .kula-a {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .kula-b {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .kula-c {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+    }
+    .kula-d {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+    .kula-e {
+      grid-column: 5/6; /* start/end */
+      grid-row: 5/6;
+      /* Ett annat sätt att skriva det på */
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="kula kula-a">A</div>
+    <div class="kula kula-b">B</div>
+    <div class="kula kula-c">C</div>
+    <div class="kula kula-d">D</div>
+    <div class="kula kula-e">E</div>
+  </section>
+</body>
+</html>

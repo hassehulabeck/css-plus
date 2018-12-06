@@ -1,0 +1,49 @@
+<html>
+<head>
+  <script></script>
+  <style>
+    section {
+      border: thin solid black;
+      display: grid;
+      grid-template-columns: auto 50px 100px 100px;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "a a a a"
+                           "b b . e"
+                           "c . d d";
+      grid-gap: 2px;
+    }
+    .kula {
+      background-color: red;
+      padding: 20% 33%;
+      color: white;
+      font-weight: 700;
+      font-size: 3em;
+      border: none;
+    }
+    .kula-a {
+      grid-area: a
+    }
+    .kula-b {
+      grid-area: b
+    }
+    .kula-c {
+      grid-area: c
+     }
+    .kula-d {
+      grid-area: d
+    }
+    .kula-e {
+      grid-area: e
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="kula kula-a">A</div>
+    <div class="kula kula-e">E</div>
+    <div class="kula kula-b">B</div>
+    <div class="kula kula-c">C med mer innehåll och fylle-ut-text</div>
+    <div class="kula kula-d">D</div>
+  </section>
+</body>
+</html>

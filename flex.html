@@ -1,0 +1,31 @@
+<html>
+<head>
+  <style media="screen">
+    section {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    div {
+      flex: 0 1 auto;
+      border: thin solid black;
+    }
+    #mitten {
+      flex: 2 1 auto;
+    }
+    .stor {
+      flex-grow: 5;
+    }
+  </style>
+</head>
+</html>
+<body>
+  <section>
+    <div>Div 1</div>
+    <div id="mitten">Div 2</div>
+    <div>Div 3</div>
+    <div class ="stor">Div 4</div>
+    <div class ="stor">Div 5</div>
+  </section>
+</body>
